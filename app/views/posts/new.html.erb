@@ -1,0 +1,13 @@
+<div class="private-square span 4 offset 1 text-center">
+  
+  <h1>
+    Upload your Book
+  </h1>
+  
+  <%= simple_form_for @post do |f| %>
+    <%= f.input :title, label: 'Subject & Book Name', placeholder: 'e.g. English, "Joy Luck Club"'%>
+    <%= f.input :description, label: 'Description', placeholder: 'State of book, any markings, writing on pages etc' %>
+    <%= f.button :submit, :class => 'btn btn-success btn-large' %>
+  <% end %>
+  
+</div>
