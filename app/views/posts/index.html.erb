@@ -1,10 +1,13 @@
 <% @posts.each do |post| %>
-  <div class="private-square span4">
+<div class="private-square span3">
     <h1>
       <%= post.title %>
     </h1>
+    <%= image_tag post.image %>
     <h2>
-       <%= post.description %>
+      <%= post.description %>
+      <%= post.price %>
+      <%= post.contact %>
     </h2>
   </div>
  <% end %>

@@ -1,4 +1,4 @@
-<div class="private-square span 4 offset 1 text-center">
+<div class="private-square span4 offset4 text-center">
   
   <h1>
     Upload your Book
@@ -7,7 +7,12 @@
   <%= simple_form_for @post do |f| %>
     <%= f.input :title, label: 'Subject & Book Name', placeholder: 'e.g. English, "Joy Luck Club"'%>
     <%= f.input :description, label: 'Description', placeholder: 'State of book, any markings, writing on pages etc' %>
+    <%= f.input :price, label: 'Asking Price', placeholder: 'Negotiable' %> 
+    <%= f.input :contact, label: 'Contact Details', placeholder: 'E-mail, phone number etc' %>  
+    <%= f.input :image %>  
+    </br>
     <%= f.button :submit, :class => 'btn btn-success btn-large' %>
+ 
   <% end %>
   
 </div>
